@@ -1,4 +1,4 @@
-# How high is the professor? What is he on? Just ignore the text that he's teaching I guess?
+# Semaine 3
 
 ## SWOT Analysis
 
