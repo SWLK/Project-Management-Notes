@@ -120,6 +120,8 @@ Un énoncé du contenu du projet comprend les éléments suivants (entre autres)
 
 Le plan de management du projet définit la manière dont le projet est exécuté, surveillé et maîtrisé, et clos.
 
+> def. Manuel d'Organisation de Projet (MOP)
+
 Un plan de management du projet comprend les éléments suivants (entre autres):
 + Plan de gestion du contenu
 + Plan de gestion de l'échéancier
@@ -129,4 +131,42 @@ Un plan de management du projet comprend les éléments suivants (entre autres):
 + Plan de gestion des communications
 + Plan de gestion des risques
 + Plan de gestion des approvisionnements
+
+## La rencontre de démarrage
+
+La rencontre de démarrage (ou les rencontres) sert à informer toutes les parties prenantes sur le projet en début de projet, de manière à aligner tous et chacun dans la même direction.
+
+Contenu de la rencontre de démarrage:
++ Définition du projet
++ Portée du projet (inclus et exclus)
++ Objectifs du projet
++ Contexte du projet
++ Les parties prenantes
++ Les principaux risques
++ Les facteurs de succès
++ Budget et coûts
++ Critères de satisfaction ou d'acceptation
++ L'échéancier
++ Les biens livrables
++ Les modalités de gestion
++ Les rôles du projet
+
+Participants à la rencontre de démarrage
++ Le client et ses représentants
++ L'équipe de projet
++ Un ou des représentants de la direction de la firme effectuant les travaux
+
+## La facilitation
+
+La facilitation c'est l'art d'avoir du leadership sans prendre le contrôle.
+
+Le facilitateur est:
++ Neutre en tout temps
++ Procure une structure de discussions qui aide le groupe à prendre des décisions efficaces
+
+Une facilitateur contribue au succès de la rencontre en:
++ Supportant les membres à gérer leur propre dynamique interpersonnelle
++ Donnant de la rétroaction au groupe pour qu'il comprennent leurs progrès et qu'il fassent les ajustements requis
++ Utilisant une approche collaborative pour gérer les conflits
++ Aidant le groupe à communiquer efficacement
 
