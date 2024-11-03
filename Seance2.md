@@ -213,3 +213,37 @@ flowchart TD
     H2 <--> H3
 
 ```
+
+## Organizational Culture
+
+Organizational culture is a set of shared assumptions, values, and behaviors that characterize the functioning of an organization.
+
+10 characteristics of Organizational Culture:
++ Member identity
++ Group emphasis
++ People focus
++ Unit integration
++ Control
++ Risk tolerance
++ Reward criteria
++ Conflict tolerance
++ Means-ends orientation
++ Open-systems focus
+
+## Importance of Top Management Commitment
+
+People in top management positions are key stakeholders in projects.
++ A very important factor in helping project managers successfully lead projects is the level of commitment and support they receive from top management.
+
+> Some projects have a senior manager called a **champion** who acts as a key proponent for a project.
+
+### How Top Management can help Project Managers
+
++ Providing adequate resources
++ Approving project needs in a timely manner
++ Getting cooperation from other parts of the organization
++ Mentoring and coaching on leadership issues
+
+> **IT governance** addresses the authority and control for key IT activities in organizations, including IT infrastructure, IT use, and project management.
+
++ Having a Chief Information Officer (CIO) in the organization helps IT projects
