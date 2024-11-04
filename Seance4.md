@@ -93,3 +93,49 @@ La planification de projet comprend les étapes et les activités nécessaires p
 + Il se concentre avant tout sur la définition et la maîtrise de ce qui fait ou non partie du projet.
 
 + L'estimation et l'ordonnancement dans le temps des activités en font aussi partie pour planifier le déroulement du projet.
+
+### 4 Concepts de Planification
+
+1. Identifier ce qui doit être fait (Planifier)
+    + Work Breakdown Structure (WBS)
+2. Identifier les efforts & coûts (Estimation)
+    + Il existe plusieurs techniques
+3. Identifier les dépendances (Ordonnancement)
+    + Graphique de dépendance, ordre logique, méthodologie
+4. Assigner les ressources (Capacité)
+    + Le résultat final donnera le plan détaillé
+
+### Work Breakdown Structure (WBS)
+
+A WBS is a deliverable-oriented grouping of the work involved in a project that defines the total scope of the project.
++ **Decomposition** is subdividing project deliverables into smaller pieces
++ A **work package** is a task at the bottom level of WBS (level # highest)
+
+#### Types de WBS
+
++ Processus
+    + Orienté sur les activités
++ Produit
+    + Orienté sur le produit
+
+#### Décomposition des livrables
+
+Décomposer les biens livrables en éléments de moindre envergure, reflétant soit des biens livrables intermédiaires, soit des parties d'un tout pouvant par contre être produites séparément.
+
++ Il faut savoir s'arrêter à un niveau de détail qui est proportionnel à la complexité et à la taille du livrable
+
++ On peut ensuite effectuer une décomposition des tâches pour chacune des composantes et/ou chaque unité, selon le niveau de décomposition atteint
+
+> Ne planifier pas plus d'items que vous êtes capable d'en gérer.
+
+#### Techniques WBS
+
++ Top-Down
+    + Débute au plus haut niveau
++ Bottom-Up
+    + Débute au plus bas niveau de tâches
++ Analogy
+    + WBS qui s'inspire d'un projet antérieur
++ Rolling Wave
+    + iterative
+
