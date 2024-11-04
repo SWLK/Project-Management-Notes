@@ -65,7 +65,7 @@ La contingence est une réserve pour les activités qui ne peuvent être prévue
 
 ### Techniques d'estimation
 
-+ ** Analogie** ou du **général au particulier**
++ **Analogie** ou du **général au particulier**
     + utilise les coûts actuels d'un projet similaire comme base d'estimation du projet
     + Cette méthode consiste en donnant un coût global du projet basé sur ses caractéristiques générales.
     + Le coût est réparti parmi les différentes composantes du projet
