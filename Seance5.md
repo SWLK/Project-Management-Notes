@@ -65,10 +65,88 @@ La contingence est une réserve pour les activités qui ne peuvent être prévue
 
 ### Techniques d'estimation
 
-+ Analogie ou du général au particulier
++ ** Analogie** ou du **général au particulier**
     + utilise les coûts actuels d'un projet similaire comme base d'estimation du projet
-+ Du particulier au général
+    + Cette méthode consiste en donnant un coût global du projet basé sur ses caractéristiques générales.
+    + Le coût est réparti parmi les différentes composantes du projet
++ **Du particulier au général**
     + signifie l'estimation des activités et livrables détaillés pour en dégager un estimé global
-+ Paramêtres/Modèle mathématique
+    + Cette méthode produit un estimé pour toutes les composantes du projet et l'estimé final est obtenu en faisant la somme des estimés de chacune des composantes
++ **Paramêtres/Modèle mathématique**
     + Utilise des paramètres du projet dans un modèle mathématique pour en dégager un estimé global
 
+### Paramètres
+
++ Lignes de codes (LOC)
+    + Avantages
+        + Mesure commune
+        + Facile à estimer
+    + Désavantages
+        + Ne touch qu'à la partie développement
+        + Difficile d'avoir un estimé tôt dans le projet car le code arrive loin
+        + Influence du choix de langage
+
++ Point de fonction
+    + Cette méthode repose sur la vision de l'utilisateur en terme d'entrées, de sorties, d'interrogations, d'informations à conserver et de mode de fonctionnement
+    + On peut estimer **une partie** des efforts d'un projet par son nombre de points de fonctions
+    + Avantage
+        + Plus structuré comme approche que les lignes de code (LOC)
+    + Desavantage
+        + N'addresse pas spécifiquement les problématiques des progiciels dans les organisations
+
+### COCOMO
+
+COCOMO (COnstructive COst MOdel) est un modèle permettant de définir une estimation de l'effort à fournir dans un développement logiciel et la durée que ce dernier prendra en fonction des ressources allouées.
+
+### Conséquences d'estimés sur & sous-évalués
+
++ Estimés trop élevés
+    + Le projet n'aura pas lieu
+    + Parkinson's Law: Le travail s'étire pour prendre 100% du budget alloué
++ Estimés trop faibles
+    + Problèmes de qualité
+    + Impossible de rencontrer les délais
+    + Problème d'engagement des ressources et perte de confiance envers le chargé de projet
+
+### Présenter les Estimés
+
+Differentes techniques:
++ Avec des +/-
+    + 6 mois +/- 1 mois
+    + 1000 J/P +/- 100 J
++ Période
+    + 6 à 8 mois
+    + de 1000 à 1200 J/P
++ Avec qualification du risque
+    + +1 mois selon la mise en route des outils de développement
+    + -2 semaines selon l'embauche des développeurs et analystes
++ En fonction des probabilité
+    + Meilleur scénario
+    + Pire scénario
+    + Scénario planifié
++ Haut niveau
+    + Q3 de 2025
++ Avec facteur de confiance
+    + 1er Avril - 10% de probabilité
+
+### Poker Planning
+
+```mermaid
+sequenceDiagram
+    participant Client
+    participant Team-Member-1
+    participant Team-Member-2
+    Client ->> Team-Member-1: Project Requirements
+    Client ->> Team-Member-2: Project Requirements
+    opt team self estimation
+        Team-Member-1 ->> Team-Member-1: 5
+        Team-Member-2 ->> Team-Member-2: 2
+    end
+    opt team discussion
+        Team-Member-1 ->> Team-Member-2: 5?
+        Team-Member-2 ->> Team-Member-1: 2?
+
+    end
+    Team-Member-1 ->> Client: 4
+    Team-Member-2 ->> Client: 4
+```
