@@ -1,152 +1,160 @@
 # Semaine 6
 
-## Le triangle Produit-Coûts-Échéancier
+## Ordonnacement
 
-+ Project Scope Management
-+ Project Cost Management
-+ Project Time Management
+### Terminologie
 
-### Deliverable input output map
++ **Activité/Tâches**: Action à poser qui entraînera la consommation de temps et possiblement d'autres ressources
++ **Critique**: Activité ou événement qui doit être complété à un certain moment sans bénéficier d'aucune latitude dans le temps (flottement)
++ **Chemin Critique**: Chemin le plus long dans le réseau
+    + détermine la date la plus hâtive à laquelle le projet peut être complété
++ **Événement**: Début ou fin d'une activité - moment spécifique
++ **Réseau**: Représentation graphique
++ **Durée**: Efforts/unités
+    + La **durée** représente le temps calendrier que prendra une tâche
+    * Les **efforts** représentent le nombre de Jours/Personnes qui seront requis pour effectuer cette tâche
++ **Jalon (milestone)**: Événement qui représente un point dans le projet avec une signification particuliere
+    + Généralement la fin d'une phase ou étape d'une projet
+    + Possède normalement une durée de zéro
+    + Utilisé pour des points de revus ou décision de votre projet
+
+### Objectifs d'Ordonnancement
+
++ Identifier la durée du projet optimale
++ Au plus bas coût
++ Avec le mmoins de risques
++ Déterminer les choix possibles
++ Utilisation plus efficaces des ressources
++ Outils de communication
+
+### Définition de l'ordonnancement des tâches
+
+> L'Ordonnancement est un processus qui permet d'inscrire dans le temps chacune des activités du projet en fonction de leur durée et de leurs interdépendances.
+
+L'Ordonnancement des tâches permet de déterminer quelles ressources seront nécessaires à quel moment, et d'en déduire les enjeux qui en découlent en termes d'intégration, d'approvisionnement, de communication et de syergie entre les individus, équipes, processus.
+
++ L'ordonnacement est souvent suivi d'un nivellement des ressources qui permet, en fonction des niveaux de flottements identifiés, de minimiser les fluctuation au niveau des ressources
+
+### 4 types de dépendances sur les tâches
+
++ **Obligatoires**
+    + Selon la nature du travail
++ **Discrétionnaire**
+    + Souvent déterminé par l'équipe du projet ou le chargé de projet
+    + Selon les processus en place
++ **Externes**
+    + Provient d'un élément externe au projet
++ **Ressources**
+    + 2 Tâches dépendent de la même ressource
+
+### Techniques pour estimer l'effort
+
+Il est souvent utile de donner 3 scénarios ou possibilités
++ Optimiste
++ Réaliste
++ Pessimiste
+
+**PERT weighted average**
+> PERT weighted average =  (optimistic time + 4x most likely time + pessimistic time) / 6
+
+#### Diagramme de Gantt
+
+Résultat des effort de Henry Gantt qui a développé un système complet de ntoation pour montrer l'avancement des projets à l'aide des diagrammes en bâtonnets.
+
++ **Avantages**
+    + Facile à comprendre, créer, maintenir
++ **Désavantages**
+    + Parfois difficile de voir les dépendances
+    + Ne permet pas facilement de tenir compte des incertitudes reliées à certaines tâches
 
 ```mermaid
-    flowchart LR
-        scope_process1[Collect Requirements]
-        scope_process2[Define Scope]
-        scope_process3[Create WBS]
-        scope_process4[Verify Scope]
-        scope_process5[Control Scope]
-        scope_management[Project Scope Management]
-        scope_management --> scope_process1
-        scope_management --> scope_process2
-        scope_management --> scope_process3
-        scope_management --> scope_process4
-        scope_management --> scope_process5
-        planning1[Planning]
-        control1[Monitoring and Controlling]
-        planning1 -.-> scope_process1
-        planning1 -.-> scope_process2
-        planning1 -.-> scope_process3
-        control1 -.-> scope_process4
-        control1 -.-> scope_process5
-        scope_output1[Requirements Documentation]
-        scope_output2[Requirements Management Plan]
-        scope_output3[Requirements Traceability Matrix]
-        scope_output4[Project Scope Statement]
-        scope_output5[Project Document Updates]
-        scope_output6[WBS]
-        scope_output7[WBS Dictionary]
-        scope_output8[Scope Baseline]
-        scope_output10[Accepted Deliverables]
-        scope_output11[Change Requests]
-        scope_output13[Work Performance Measurements]
-        scope_output14[Organizational Process Assets Updates]
-        scope_output16[Project Management Plan Updates]
-        scope_process1 --> scope_output1
-        scope_process1 --> scope_output2        
-        scope_process1 --> scope_output3        
-        scope_process2 --> scope_output4        
-        scope_process2 --> scope_output5        
-        scope_process3 --> scope_output6        
-        scope_process3 --> scope_output7        
-        scope_process3 --> scope_output8        
-        scope_process3 --> scope_output5        
-        scope_process4 --> scope_output10        
-        scope_process4 --> scope_output11       
-        scope_process4 --> scope_output5       
-        scope_process5 --> scope_output13       
-        scope_process5 --> scope_output14       
-        scope_process5 --> scope_output11       
-        scope_process5 --> scope_output16       
-        scope_process5 --> scope_output5       
+gantt
+    title Example Gantt Diagram of Project Time Management Processes
+    dateFormat DD
+    section Project Time Management
+        Define Activities           :2024-11-14, 3d
+        Sequencee Acitivities       :2024-11-15, 7d
+        Estimate Activity Resources :2024-11-16, 6d
+        Develop Schedule            :2024-11-19, 4d
+        Control Schedule            :2024-11-23, 10d
+```
 
-        cost_management[Project Cost Management]
-        cost_process1[Estimate Costs]
-        cost_process2[Determine Budget]
-        cost_process3[Control Costs]
-        cost_output1[Activity Cost Estimates]
-        cost_output2[Basis of Estimates]
-        cost_output3[Project Document Updates]
-        cost_output4[Cost Performance Baseline]
-        cost_output5[Project Funding Requirements]
-        cost_output7[Work Performance Measurements]
-        cost_output8[Budget Forecasts]
-        cost_output9[Organizational Process Assets Updates]
-        cost_output10[Change Requests]
-        cost_output11[Project Management Plan Updates]
-        planning2[Planning]
-        control2[Monitoring and Controlling]
-        planning2 -.-> cost_process1
-        planning2 -.-> cost_process2
-        control2 -.-> cost_process3
-        cost_process1 --> cost_output1
-        cost_process1 --> cost_output2
-        cost_process1 --> cost_output3
-        cost_process2 --> cost_output4
-        cost_process2 --> cost_output5
-        cost_process2 --> cost_output3
-        cost_process3 --> cost_output7
-        cost_process3 --> cost_output8
-        cost_process3 --> cost_output9
-        cost_process3 --> cost_output10
-        cost_process3 --> cost_output11
-        cost_process3 --> cost_output3
-        cost_management --> cost_process1
-        cost_management --> cost_process2
-        cost_management --> cost_process3
+#### Critical Path Method (CPM)
 
-        time_management[Project Time Management]
-        time_process1[Define Activities]
-        time_process2[Sequence Activities]
-        time_process3[Estimate Activity Resources]
-        time_process4[Estimate Activity Durations]
-        time_process5[Develop Schedule]
-        time_process6[Control Schedule]
-        time_management --> time_process1
-        time_management --> time_process2
-        time_management --> time_process3
-        time_management --> time_process4
-        time_management --> time_process5
-        time_management --> time_process6
-        time_output1[Activity List]
-        time_output2[Activity Attributes]
-        time_output3[Milestone List]
-        time_output4[Project Schedule Network Diagrams]
-        time_output5[Project Document Updates]
-        time_output6[Activity Resource Requirements]
-        time_output7[Resource Breakdown Structure]
-        time_output9[Activity Duration Estimates]
-        time_output11[Project Schedule]
-        time_output12[Schedule Baseline]
-        time_output13[Schedule Data]
-        time_output15[Work Performance Measurements]
-        time_output16[Organizational Process Assets]
-        time_output17[Change Requests]
-        time_output18[Project Management Plan Updates]
-        time_process1 --> time_output1
-        time_process1 --> time_output2
-        time_process1 --> time_output3
-        time_process2 --> time_output4
-        time_process2 --> time_output5
-        time_process3 --> time_output6
-        time_process3 --> time_output7
-        time_process3 --> time_output5
-        time_process4 --> time_output9
-        time_process4 --> time_output5
-        time_process5 --> time_output11
-        time_process5 --> time_output12
-        time_process5 --> time_output13
-        time_process5 --> time_output5
-        time_process6 --> time_output15
-        time_process6 --> time_output16
-        time_process6 --> time_output17
-        time_process6 --> time_output18
-        time_process6 --> time_output5
-        planning3[Planning]
-        control3[Monitoring and Controlling]
-        planning3 -.-> time_process1
-        planning3 -.-> time_process2
-        planning3 -.-> time_process3
-        planning3 -.-> time_process4
-        planning3 -.-> time_process5
-        control3 -.-> time_process6
+**CPM** is a network diagramming technique used to predict total project duration.
+
+> A **critical path** for a project is the series of activities that determines the earliest time by which the project can be completed.
+
++ The critical path is the longest path through the network diagram and has the least amount of slack or float
++ **Slack** or **float** is the amount of time an activity may be delayed without delaying a succeeding activity or the project finish date
++ The critical path is **not** the one with all the critical activities. It only accounts for time
++ The critical path can change as the project progresses
+
+##### Calculating the Critical Path
+
+1. Develop a good network diagram
+2. Add the duration estimates for all activities on each pat through the network diagram
+3. The longest path si the critical path
+4. If one or more of the activities on the critical path takes longer than planned, the whole project schedule will slip unless the project manager takes corrective action
+
+##### Updating Critical Path Data
+
++ The critical path may change as you enter actual start and finish dates
++ If you know the project completion date will slip, negotiate with the project sponsor
+
+### Buffers
+
+A **buffer** is additional time to complete a task.
++ Murphy's Law states that if something can go wrong, it will
++ Parkinson's Law states that work expands to fill the time allowed
+
+### Nivellement
+
+Le nivellement (lissage) vise à:
++ S'assurer que le niveau total des ressources requises à tout moment du projet ne dépasse pas le niveau maximal de disponibilité de ressources
++ Minimiser les fluctuations dans le nombre de ressources utilisées
+
+Pour effectuer ce nivellement, on tiendra compte:
++ Du flottement dans les activités **non critiques**
++ De la latitude réelle sur les coûts, les spécifications et l'échéancier
+
+> Le nivellement demeure un objectif important mais qui ne doit pas pour autant causer plus de problèmes qu'il n'en résout.
+
+### Techniques de gestion de projet
+
+```mermaid
+stateDiagram-v2
+    f1: Budget and cost
+    f2: Specifications
+    f3: Cost
+    flexibility --> f1 
+    flexibility --> f2
+    flexibility --> f3
+    i1: Specifications
+    i2: Cost
+    i3: Scope
+    immutable --> i1 
+    immutable --> i2
+    immutable --> i3
+    T1: Fast Tracking
+    T2: Scope Reduction
+    T3: Crashing
+
+    F1: Fast Tracking Delay
+    state F1{
+       f1 --> T1
+       i1 --> T1   
+    }
+
+    F2: Scope Reduction Delay
+    state F2 {
+        f2 --> T2
+        i2 --> T2
+    }
+
+    F3: Crashing
+    state F3 {
+        f3 --> T3
+        i3 --> T3
+    }
 ```
