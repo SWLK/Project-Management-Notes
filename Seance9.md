@@ -77,6 +77,14 @@ Les techniques de mesure de performance aident à estimer l'ampleur des écarts 
 > La valeur acquise est le montant de travail budgété effectivement réalisé pour l'activité de l'échéancier ou le composant de la structure de découpage du projet au cours d'une période donnée:
 > + Montant planifié cumulé * % complété
 
++ Mesurée en $ ou en heure
++ % Complete vs % Physical complete
+
+3 composantes:
++ VP: Budgeted cost of work schedule (BCWS)
++ VA: Budgeted cost of work performed (BCWP)
++ CR: Actual cost of work performed (ACWP)
+
 #### Coût Réel (CR)
 
 Le coût réel est le coût total encouru pour effectuer le travail de l'activité de l'échéancier ou du composant de la structure de découpage du projet au cours d'une période donnée.
