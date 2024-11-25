@@ -1,6 +1,6 @@
 # Semaine 7
 
-## La Gestiono du Risque
+## La Gestion du Risque
 
 ### Définitions du Risque
 
