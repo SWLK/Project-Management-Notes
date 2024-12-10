@@ -1,4 +1,4 @@
-# Seance 12
+# Semaine 12
 
 ## La gestion des communications
 

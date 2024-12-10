@@ -1,4 +1,4 @@
-# Seance 11
+# Semaine 11
 
 ## La gestion des ressources humaines (RH)
 
